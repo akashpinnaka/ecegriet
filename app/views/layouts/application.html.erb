@@ -8,7 +8,73 @@
 </head>
 <body>
 
-<%= yield %>
+	<div id="top_bar"></div>
+
+  <div id="body_wrapper">
+    <div id="banner">
+      <div id="banner_in" class="cf">
+        <!-- <a href="#"><img src="banner.png" alt="banner"></a> -->
+        <%= link_to image_tag('banner.png'), root_path %>
+        <div id="menu_button">
+          <p class="menuToggleButton">&#9776;</p>  
+        </div>          
+      </div>         
+    </div>
+    <header id="header">
+    <div id="sidebar_close">
+      <span id="sidebar_close_button"> &rarr; close</span>
+    </div>
+      <ul class="cf main">
+        <li class="main"><a href="#">Home</a></li>
+        <li class="main">
+          <a href="#">Department</a>
+          <ul>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Vision &amp; Mission</a></li>
+            <li><a href="#">PEO's &amp; PO's</a></li>
+          </ul>
+        </li>
+        <li class="main"><a href="#">Governance</a></li>
+        <li class="main">
+          <a href="#">People</a>
+          <ul>
+            <li><%= link_to "Faculty", people_path %></li>
+            <li><a href="#">Students</a></li>
+            <li><a href="#">Staff</a></li>
+            <li><a href="#">Alumni</a></li>
+          </ul>
+        </li>
+        <li class="main">
+          <a href="#">Programmes Offered</a>
+          <ul>
+            <li><a href="#">UG(B-Tech) Electronics &amp; Communication Engineering</a></li>
+            <li><a href="#">PG(M-Tech)</a></li>
+          </ul>
+        </li>
+        <li class="main"><a href="#">Research</a></li>
+        <li class="main"><a href="#">BOS</a></li>
+        <li class="main"><a href="#">Events</a></li>
+        <li class="main"><a href="#">Gallery</a></li>
+      </ul>
+    </header>
+
+
+    <%= yield %>
+
+    
+    <footer>
+      <div id="footer_in" class="cf">
+        <div id="copyright">
+          <span>&copy; Copyright 2016 ECE</span>
+        </div>
+        <div id="social_links">
+          <a href="#" target="_blank"><i class="fa fa-rss"></i></a>
+        </div>
+      </div>      
+    </footer>
+  </div>
+
+
 
 </body>
 </html>

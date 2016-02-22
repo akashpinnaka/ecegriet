@@ -1,0 +1,79 @@
+// ------------PEOPLE#NEW STYLES-----------------------
+#new_person_wrapper{
+  margin-top: 2em;
+  h2{
+    text-align: center;
+    font-size: 1.3em;
+    margin-bottom: 1em;
+    color: #289dcc;
+  }
+  #form_wrapper{
+    margin: 0 auto 0 auto;
+    width: 80%;
+    form{
+      #form_wrapper_in{
+        #first_data_part{
+          float: left;
+          width: 30%;
+          input{
+            width: 100%;
+            height: 1.8em;
+            padding: 0.3em 0.6em;
+            margin-bottom: 1em;
+            border-radius: 2px;
+            border: 1px solid #ccc;
+            &:focus{
+              box-shadow: 0 0 1px #289dcc;
+            }
+          }
+        }
+        #second_data_part{
+          float: right;
+          width: 60%;
+          input,textarea{
+            width: 100%;
+          }
+          input{
+            height: 1.8em;
+            padding: 0.3em 0.6em;
+            margin-bottom: 1em;
+            border-radius: 2px;
+            border: 1px solid #ccc;
+            &:focus{
+              box-shadow: 0 0 1px #289dcc;
+            }
+          }
+          textarea{
+            height: 200px;
+            padding: 0.7em 0.6em;
+            resize: vertical;
+            border: 1px solid #ccc;
+            border-radius: 2px;
+            &:focus{
+              box-shadow: 0 0 1px #289dcc;
+            }
+          }
+        }
+      }
+      #submit_button{
+        float: right;
+        input{
+          background-color: #289dcc;
+          color: #eee;
+          border: none;
+          border-radius: 2px;
+          padding: 0.5em 1em;
+          cursor: pointer;
+          &:hover{
+            background-color: lighten(#289dcc, 7%);
+          }
+          &:active{
+            background-color: darken(#289dcc, 7%);
+          }
+        }
+      }
+    }    
+  }
+}
+
+// ------------PEOPLE#INDEX STYLES-----------------------

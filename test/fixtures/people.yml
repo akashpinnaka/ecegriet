@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  id_number: 1
+  designation: MyString
+  qualification: MyString
+  teaching_experience: 1
+  industry_experience: MyString
+  research_interest: MyString
+  description: MyText
+
+two:
+  name: MyString
+  id_number: 1
+  designation: MyString
+  qualification: MyString
+  teaching_experience: 1
+  industry_experience: MyString
+  research_interest: MyString
+  description: MyText
